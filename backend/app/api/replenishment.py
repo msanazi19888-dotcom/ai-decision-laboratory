@@ -71,7 +71,7 @@ def create_replenishment_decision(request: ReplenishmentRequest):
     }
 
 
-@router.get("")
+@router.get("/")
 def list_decisions():
     decisions = decision_service.list_decisions()
     return [

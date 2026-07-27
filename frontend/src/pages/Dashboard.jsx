@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import "./Dashboard.css";
+
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
 import InputCard from "../components/InputCard";
@@ -11,6 +13,7 @@ import ExecutiveSummary from "../components/ExecutiveSummary";
 import DecisionTrendChart from "../components/DecisionTrendChart";
 import StrategyDistributionChart from "../components/StrategyDistributionChart";
 import DecisionStatusChart from "../components/DecisionStatusChart";
+
 
 const EMPTY_ANALYTICS = {
   kpis: {

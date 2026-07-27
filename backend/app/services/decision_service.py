@@ -1,22 +1,20 @@
 from __future__ import annotations
 
-from uuid import uuid4
-
 from app.domain.decision import Decision, DecisionType
 from app.domain.decision_context import DecisionContext
 
-from app.engines.knowledge_engine import KnowledgeEngine
-from app.engines.strategy_generator import StrategyGenerator
-from app.engines.strategy_evaluator import StrategyEvaluator
-from app.engines.recommendation_engine import RecommendationEngine
 from app.engines.explanation_engine import ExplanationEngine
+from app.engines.knowledge_engine import KnowledgeEngine
+from app.engines.recommendation_engine import RecommendationEngine
+from app.engines.strategy_evaluator import StrategyEvaluator
+from app.engines.strategy_generator import StrategyGenerator
 
-from app.repositories.in_memory_decision_repository import InMemoryDecisionRepository
+from app.infrastructure.postgres_decision_repository import PostgreSQLDecisionRepository
 
 
 class DecisionService:
     def __init__(self) -> None:
-        self.repository = InMemoryDecisionRepository()
+        self.repository = PostgreSQLDecisionRepository()
         self.knowledge_engine = KnowledgeEngine()
         self.strategy_generator = StrategyGenerator()
         self.strategy_evaluator = StrategyEvaluator()
@@ -61,7 +59,7 @@ class DecisionService:
         knowledge = self.knowledge_engine.collect(context)
 
         decision = Decision.create(
-            decision_id=f"DEC-{uuid4().hex[:8].upper()}",
+            decision_id=f"DEC-{len(self.repository.list_all()) + 1:03d}",
             decision_type=DecisionType.INVENTORY_REPLENISHMENT,
             context=context,
         )
