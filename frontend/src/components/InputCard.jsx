@@ -17,16 +17,19 @@ function InputCard({ onRecommendation, onLoadingChange, onError }) {
   });
 
   const handleChange = (e) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
 
     setFormData((prev) => ({
       ...prev,
       [name]:
-        type === "number"
-          ? value === ""
+        name === "product_id" ||
+        name === "business_objective" ||
+        name === "priority" ||
+        name === "time_horizon"
+          ? value
+          : value === ""
             ? ""
-            : Number(value)
-          : value,
+            : Number(value),
     }));
   };
 
@@ -34,21 +37,18 @@ function InputCard({ onRecommendation, onLoadingChange, onError }) {
     e.preventDefault();
 
     try {
-      onError("");
       onLoadingChange(true);
+      onError("");
 
       const response = await createReplenishmentDecision(formData);
-      console.log("API response:", response.data);
 
       onRecommendation(response.data);
     } catch (error) {
-      console.error("API error:", error);
-      console.error("API error response:", error.response);
-
+      console.error(error);
       onError(
-        JSON.stringify(
-          error.response?.data || error.message || "Unknown error"
-        )
+        error?.response?.data?.detail ||
+          error?.message ||
+          "Failed to generate recommendation."
       );
     } finally {
       onLoadingChange(false);
@@ -59,7 +59,7 @@ function InputCard({ onRecommendation, onLoadingChange, onError }) {
     <section className="card">
       <h2>Decision Input</h2>
 
-      <form onSubmit={handleSubmit} className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <label>
           Product ID
           <input

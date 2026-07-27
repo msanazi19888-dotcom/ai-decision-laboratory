@@ -1,32 +1,18 @@
-import { useState } from "react";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import InputCard from "./components/InputCard";
-import RecommendationCard from "./components/RecommendationCard";
+import "./App.css";
+import Dashboard from "./pages/Dashboard";
+import DecisionHistory from "./pages/DecisionHistory";
+import DecisionDetails from "./pages/DecisionDetails";
 
 function App() {
-  const [recommendation, setRecommendation] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-
   return (
     <div className="app">
-      <Header />
-
-      <main className="grid">
-        <InputCard
-          onRecommendation={setRecommendation}
-          onLoadingChange={setLoading}
-          onError={setError}
-        />
-
-        <RecommendationCard
-          recommendation={recommendation}
-          loading={loading}
-          error={error}
-        />
-      </main>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/history" element={<DecisionHistory />} />
+        <Route path="/decision/:id" element={<DecisionDetails />} />
+      </Routes>
     </div>
   );
 }

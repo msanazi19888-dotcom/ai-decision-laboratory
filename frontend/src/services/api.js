@@ -7,8 +7,19 @@ const api = axios.create({
   },
 });
 
-export const createReplenishmentDecision = (payload) => {
-  return api.post("/replenishment", payload);
+// Create a new replenishment decision
+export const createReplenishmentDecision = async (payload) => {
+  return await api.post("/replenishment", payload);
+};
+
+// Get all decisions
+export const getDecisions = async () => {
+  return await api.get("");
+};
+
+// Get a single decision by ID
+export const getDecision = async (decisionId) => {
+  return await api.get(`/${decisionId}`);
 };
 
 export default api;

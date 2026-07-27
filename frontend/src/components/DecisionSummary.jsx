@@ -1,31 +1,26 @@
 function DecisionSummary({ recommendation }) {
   return (
     <div className="result-block">
+      <p className="section-title">DECISION SUMMARY</p>
 
-      <h3>Decision Details</h3>
+      <div className="kpi-grid">
+        <div className="kpi-card">
+          <span className="kpi-label">Decision ID</span>
+          <span className="kpi-value">{recommendation.decision_id}</span>
+        </div>
 
-      <p>
-        <strong>Decision ID</strong>
-      </p>
+        <div className="kpi-card">
+          <span className="kpi-label">Decision Type</span>
+          <span className="kpi-value">{recommendation.decision_type}</span>
+        </div>
 
-      <p>{recommendation.decision_id}</p>
-
-      <hr />
-
-      <p>
-        <strong>Status</strong>
-      </p>
-
-      <p>{recommendation.status}</p>
-
-      <hr />
-
-      <p>
-        <strong>Decision Type</strong>
-      </p>
-
-      <p>{recommendation.decision_type}</p>
-
+        <div className="kpi-card">
+          <span className="kpi-label">Status</span>
+          <span className="kpi-value status completed">
+            {recommendation.status.toUpperCase()}
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
