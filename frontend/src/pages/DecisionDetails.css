@@ -1,0 +1,257 @@
+/* =========================================
+   Decision Details
+========================================= */
+
+.details-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.result-block {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.result-block .section-title {
+  margin-bottom: 1.25rem;
+}
+
+/* =========================================
+   KPI Cards
+========================================= */
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.kpi-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.kpi-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+.kpi-value {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  word-break: break-word;
+}
+
+/* =========================================
+   Strategy
+========================================= */
+
+.strategy-name {
+  margin: 0;
+  color: #2563eb;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.label {
+  font-weight: 600;
+  color: #475569;
+}
+
+.score {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* =========================================
+   Description
+========================================= */
+
+.description-box {
+  margin-top: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.description-box h4 {
+  margin: 0 0 0.75rem;
+  color: #0f172a;
+}
+
+.description-box p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* =========================================
+   Details Sections
+========================================= */
+
+.details-section {
+  margin-top: 1rem;
+}
+
+.details-section h4 {
+  margin: 0 0 0.75rem;
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* =========================================
+   Strategy Cards
+========================================= */
+
+.strategy-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.strategy-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.strategy-card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+}
+
+.strategy-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.strategy-rank {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.strategy-score {
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.strategy-description {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* =========================================
+   Business Data
+========================================= */
+
+.history-table {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.history-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.history-row:first-child {
+  border-top: none;
+}
+
+/* =========================================
+   Export Button
+========================================= */
+
+.export-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 12px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.export-button:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(220, 38, 38, 0.25);
+}
+
+.export-button svg {
+  font-size: 1rem;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 768px) {
+  .details-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .details-toolbar .view-button,
+  .details-toolbar .export-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .history-row {
+    grid-template-columns: 1fr;
+  }
+}

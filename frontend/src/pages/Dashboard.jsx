@@ -1,19 +1,12 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 import "./Dashboard.css";
 
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
-import InputCard from "../components/InputCard";
-import RecommendationCard from "../components/RecommendationCard";
-
-import DashboardKPICards from "../components/DashboardKPICards";
-import ExecutiveSummary from "../components/ExecutiveSummary";
-import DecisionTrendChart from "../components/DecisionTrendChart";
-import StrategyDistributionChart from "../components/StrategyDistributionChart";
-import DecisionStatusChart from "../components/DecisionStatusChart";
-
+import QuickActions from "../components/QuickActions";
+import ExecutiveAnalytics from "../components/ExecutiveAnalytics";
+import RecommendationWorkspace from "../components/RecommendationWorkspace";
 
 const EMPTY_ANALYTICS = {
   kpis: {
@@ -30,8 +23,6 @@ const EMPTY_ANALYTICS = {
 };
 
 function Dashboard() {
-  const navigate = useNavigate();
-
   const [recommendation, setRecommendation] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -45,10 +36,15 @@ function Dashboard() {
 
     const loadAnalytics = async () => {
       try {
-        const response = await fetch("/api/v1/analytics/");
+        setAnalyticsLoading(true);
+        setAnalyticsError("");
+
+        const response = await fetch("/api/v1/analytics/", {
+          signal: controller.signal,
+        });
 
         if (!response.ok) {
-          throw new Error();
+          throw new Error(`Failed to load analytics: ${response.status}`);
         }
 
         const data = await response.json();
@@ -56,9 +52,16 @@ function Dashboard() {
         setAnalytics({
           ...EMPTY_ANALYTICS,
           ...data,
+          kpis: {
+            ...EMPTY_ANALYTICS.kpis,
+            ...(data.kpis || {}),
+          },
         });
-      } catch {
-        setAnalyticsError("Failed to load analytics.");
+      } catch (err) {
+        if (err.name !== "AbortError") {
+          console.error(err);
+          setAnalyticsError("Failed to load dashboard analytics.");
+        }
       } finally {
         setAnalyticsLoading(false);
       }
@@ -73,103 +76,22 @@ function Dashboard() {
     <>
       <Navigation />
       <Header />
+      <QuickActions />
 
-      <div className="card">
-        <h2>Executive Analytics</h2>
+      <ExecutiveAnalytics
+        analytics={analytics}
+        loading={analyticsLoading}
+        error={analyticsError}
+      />
 
-        {analyticsLoading && <p>Loading...</p>}
-
-        {analyticsError && <p>{analyticsError}</p>}
-
-        {!analyticsLoading && !analyticsError && (
-          <>
-            <DashboardKPICards kpis={analytics.kpis} />
-
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                gap: "20px",
-                marginTop: "25px",
-              }}
-            >
-              <DecisionTrendChart
-                data={analytics.trend}
-              />
-
-              <StrategyDistributionChart
-                data={analytics.strategy_distribution}
-              />
-            </div>
-
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                gap: "20px",
-                marginTop: "25px",
-              }}
-            >
-              <DecisionStatusChart
-                data={analytics.status_distribution}
-              />
-
-              <ExecutiveSummary
-                kpis={analytics.kpis}
-              />
-            </div>
-
-            <div
-              className="card"
-              style={{ marginTop: "25px" }}
-            >
-              <h3>Recent Decisions</h3>
-
-              <table className="history-table">
-                <thead>
-                  <tr className="history-header">
-                    <th>ID</th>
-                    <th>Strategy</th>
-                    <th>Score</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {analytics.recent_decisions.map((d) => (
-                    <tr
-                      key={d.decision_id}
-                      style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate(`/decision/${d.decision_id}`)
-                      }
-                    >
-                      <td>{d.decision_id}</td>
-                      <td>{d.strategy}</td>
-                      <td>{d.score}</td>
-                      <td>{d.status}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </>
-        )}
-      </div>
-
-      <main className="grid">
-        <InputCard
-          onRecommendation={setRecommendation}
-          onLoadingChange={setLoading}
-          onError={setError}
-        />
-
-        <RecommendationCard
-          recommendation={recommendation}
-          loading={loading}
-          error={error}
-        />
-      </main>
+      <RecommendationWorkspace
+        recommendation={recommendation}
+        loading={loading}
+        error={error}
+        onRecommendation={setRecommendation}
+        onLoadingChange={setLoading}
+        onError={setError}
+      />
     </>
   );
 }

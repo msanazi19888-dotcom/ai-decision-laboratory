@@ -1,19 +1,21 @@
 import { NavLink } from "react-router-dom";
+import { FaBrain } from "react-icons/fa";
 
 function Navigation() {
   return (
     <header className="app-header">
-
       <div className="app-brand">
+        <div className="brand-logo">
+          <FaBrain />
+        </div>
 
-        <h1>AI Decision Laboratory</h1>
-
-        <p>Decision Intelligence Platform</p>
-
+        <div>
+          <h1>AI Decision Laboratory</h1>
+          <p>Decision Intelligence Platform</p>
+        </div>
       </div>
 
       <nav className="navigation">
-
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -31,9 +33,7 @@ function Navigation() {
         >
           Decision History
         </NavLink>
-
       </nav>
-
     </header>
   );
 }
