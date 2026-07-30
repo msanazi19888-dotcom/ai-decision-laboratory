@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import QuickActions from "../components/QuickActions";
 import ExecutiveAnalytics from "../components/ExecutiveAnalytics";
 import RecommendationWorkspace from "../components/RecommendationWorkspace";
+import AIForecast from "../components/AIForecast";
 
 const EMPTY_ANALYTICS = {
   kpis: {
@@ -83,6 +84,9 @@ function Dashboard() {
         loading={analyticsLoading}
         error={analyticsError}
       />
+
+      {/* 🤖 AI Forecast Card */}
+      <AIForecast />
 
       <RecommendationWorkspace
         recommendation={recommendation}

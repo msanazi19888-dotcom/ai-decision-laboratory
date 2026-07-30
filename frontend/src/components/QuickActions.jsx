@@ -12,17 +12,28 @@ function QuickActions() {
   };
 
   const scrollToAnalytics = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const analyticsSection = document.getElementById(
+      "executive-analytics"
+    );
+
+    if (analyticsSection) {
+      analyticsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (
     <div className="dashboard-section">
-      <h2 className="analytics-title">QUICK ACTIONS</h2>
+      <h2 className="analytics-title">
+        QUICK ACTIONS
+      </h2>
 
       <div className="analytics-grid">
+
+        {/* Generate Recommendation */}
+
         <div
           className="analytics-card clickable-row"
           onClick={scrollToRecommendation}
@@ -51,6 +62,8 @@ function QuickActions() {
             Start →
           </span>
         </div>
+
+        {/* Decision History */}
 
         <div
           className="analytics-card clickable-row"
@@ -81,6 +94,8 @@ function QuickActions() {
           </span>
         </div>
 
+        {/* Executive Analytics */}
+
         <div
           className="analytics-card clickable-row"
           onClick={scrollToAnalytics}
@@ -109,6 +124,7 @@ function QuickActions() {
             Explore →
           </span>
         </div>
+
       </div>
     </div>
   );

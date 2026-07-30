@@ -14,7 +14,7 @@ export const createReplenishmentDecision = async (payload) => {
 
 // Get all decisions
 export const getDecisions = async () => {
-  return await api.get("");
+  return await api.get("/");
 };
 
 // Get a single decision by ID
