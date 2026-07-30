@@ -1,61 +1,52 @@
+from __future__ import annotations
+
 from pathlib import Path
+from typing import Any
 
 import joblib
-import pandas as pd
-
-from ai.config.settings import SYNTHETIC_DATA_DIR
 
 
 class DemandPredictor:
-    """Load a trained demand model and make predictions."""
-
     def __init__(self) -> None:
-        self.model_path = SYNTHETIC_DATA_DIR / "demand_model.pkl"
-        self.model = joblib.load(self.model_path)
-
-    def predict(
-        self,
-        *,
-        day_of_week: int,
-        day: int,
-        month: int,
-        year: int,
-        week_of_year: int,
-        is_weekend: int,
-        rolling_7_day_avg: float,
-        rolling_30_day_avg: float,
-    ) -> float:
-        features = pd.DataFrame(
-            [
-                {
-                    "day_of_week": day_of_week,
-                    "day": day,
-                    "month": month,
-                    "year": year,
-                    "week_of_year": week_of_year,
-                    "is_weekend": is_weekend,
-                    "rolling_7_day_avg": rolling_7_day_avg,
-                    "rolling_30_day_avg": rolling_30_day_avg,
-                }
-            ]
+        self.model_path = (
+            Path(__file__).resolve().parents[1]
+            / "data"
+            / "synthetic"
+            / "demand_model.pkl"
         )
+        self.model = None
 
-        prediction = self.model.predict(features)
-        return round(float(prediction[0]), 2)
+        if self.model_path.exists():
+            try:
+                self.model = joblib.load(self.model_path)
+            except Exception:
+                self.model = None
 
+    def _build_features(self, payload: dict[str, Any]) -> list[list[float]]:
+        return [[
+            float(payload.get("day_of_week", 0)),
+            float(payload.get("day", 0)),
+            float(payload.get("month", 0)),
+            float(payload.get("week_of_year", 0)),
+            float(payload.get("is_weekend", 0)),
+            float(payload.get("rolling_7_day_avg", 0)),
+            float(payload.get("rolling_30_day_avg", 0)),
+        ]]
 
-if __name__ == "__main__":
-    predictor = DemandPredictor()
+    def _fallback_prediction(self, payload: dict[str, Any]) -> float:
+        r7 = float(payload.get("rolling_7_day_avg", 0))
+        r30 = float(payload.get("rolling_30_day_avg", 0))
+        weekend = 8 if int(payload.get("is_weekend", 0)) else 0
+        month = int(payload.get("month", 0))
+        seasonal_boost = 4 if month in (11, 12, 1) else 0
 
-    prediction = predictor.predict(
-        day_of_week=4,
-        day=15,
-        month=7,
-        year=2025,
-        week_of_year=29,
-        is_weekend=0,
-        rolling_7_day_avg=72,
-        rolling_30_day_avg=68,
-    )
+        prediction = (0.6 * r7) + (0.3 * r30) + weekend + seasonal_boost
+        return round(max(prediction, 1.0), 2)
 
-    print(f"\nPredicted demand: {prediction} units")
+    def predict(self, payload: dict[str, Any]) -> float:
+        if self.model is None:
+            return self._fallback_prediction(payload)
+
+        features = self._build_features(payload)
+        prediction = self.model.predict(features)[0]
+        return round(float(prediction), 2)
