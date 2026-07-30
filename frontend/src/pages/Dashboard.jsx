@@ -9,6 +9,9 @@ import ExecutiveAnalytics from "../components/ExecutiveAnalytics";
 import RecommendationWorkspace from "../components/RecommendationWorkspace";
 import AIForecast from "../components/AIForecast";
 
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8001";
+
 const EMPTY_ANALYTICS = {
   kpis: {
     total_decisions: 0,
@@ -40,9 +43,12 @@ function Dashboard() {
         setAnalyticsLoading(true);
         setAnalyticsError("");
 
-        const response = await fetch("/api/v1/analytics/", {
-          signal: controller.signal,
-        });
+        const response = await fetch(
+          `${API_URL}/api/v1/analytics/`,
+          {
+            signal: controller.signal,
+          }
+        );
 
         if (!response.ok) {
           throw new Error(`Failed to load analytics: ${response.status}`);
@@ -85,7 +91,6 @@ function Dashboard() {
         error={analyticsError}
       />
 
-      {/* 🤖 AI Forecast Card */}
       <AIForecast />
 
       <RecommendationWorkspace
