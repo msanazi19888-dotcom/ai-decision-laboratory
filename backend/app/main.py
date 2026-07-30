@@ -12,17 +12,20 @@ app = FastAPI(
     version="0.1.0",
 )
 
+# CORS Configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://ai-decision-laboratory.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# API Routers
 app.include_router(replenishment_router)
 app.include_router(analytics_router)
 app.include_router(decisions_router)
@@ -31,7 +34,9 @@ app.include_router(prediction_router)
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to AI Decision Laboratory"}
+    return {
+        "message": "Welcome to AI Decision Laboratory"
+    }
 
 
 @app.get("/health")
