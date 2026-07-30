@@ -1,21 +1,33 @@
+# =========================
 # Python
+# =========================
 backend/.venv/
 **/__pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Node
+# =========================
+# Node.js
+# =========================
+node_modules/
 frontend/node_modules/
 frontend/dist/
 
-# IDE
-.vscode/
-.idea/
-
-# Environment
+# =========================
+# Environment Variables
+# =========================
 .env
 .env.*
 
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
 # OS
+# =========================
 Thumbs.db
 .DS_Store
+backend/ai/data/synthetic/demand_model.pkl

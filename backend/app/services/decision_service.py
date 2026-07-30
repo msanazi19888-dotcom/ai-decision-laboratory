@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Protocol
+
 from app.domain.decision import Decision, DecisionType
 from app.domain.decision_context import DecisionContext
 
@@ -12,9 +14,15 @@ from app.engines.strategy_generator import StrategyGenerator
 from app.infrastructure.postgres_decision_repository import PostgreSQLDecisionRepository
 
 
+class DecisionRepositoryProtocol(Protocol):
+    def save(self, decision: Decision) -> Decision: ...
+    def get_by_id(self, decision_id: str) -> Decision | None: ...
+    def list_all(self) -> list[Decision]: ...
+
+
 class DecisionService:
-    def __init__(self) -> None:
-        self.repository = PostgreSQLDecisionRepository()
+    def __init__(self, repository: DecisionRepositoryProtocol | None = None) -> None:
+        self.repository = repository or PostgreSQLDecisionRepository()
         self.knowledge_engine = KnowledgeEngine()
         self.strategy_generator = StrategyGenerator()
         self.strategy_evaluator = StrategyEvaluator()

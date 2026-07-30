@@ -1,226 +1,73 @@
-# AI Decision Laboratory
+# 🤖 AI Decision Laboratory
 
-An AI-powered Decision Intelligence platform that assists organizations in making explainable business decisions.
+># 🤖 AI Decision Laboratory
 
----
+> **Predict. Explain. Recommend.**
 
-## Project Overview
-
-AI Decision Laboratory is a graduation project that combines:
-
-- Decision Support Systems (DSS)
-- Decision Intelligence (DI)
-- Explainable AI (XAI)
-- Domain-Driven Design (DDD)
-- Clean Architecture
-
-The first implemented business use case is **Inventory Replenishment**, where the system generates, evaluates, and recommends replenishment strategies based on business knowledge.
+An AI-powered Decision Intelligence Platform built with **React**, **FastAPI**, **PostgreSQL**, and **Machine Learning**.
 
 ---
 
-## Objectives
+## ✨ Highlights
 
-The system aims to:
-
-- Model organizational decision-making.
-- Generate multiple decision alternatives.
-- Evaluate strategies using business criteria.
-- Produce explainable recommendations.
-- Support future AI modules such as demand forecasting and scenario simulation.
-
----
-
-## Architecture
-
-```
-Frontend
-    │
-    ▼
-FastAPI API
-    │
-    ▼
-Decision Service
-    │
-    ▼
-Decision Intelligence Pipeline
-
-Context Validation
-        │
-Knowledge Extraction
-        │
-Strategy Generation
-        │
-Strategy Evaluation
-        │
-Recommendation
-        │
-Explanation
-
-    ▼
-
-Domain Layer
-
-Decision
-DecisionContext
-DecisionKnowledge
-Strategy
-Recommendation
-
-    ▼
-
-Repository Layer
-
-InMemory Repository
-PostgreSQL Repository (planned)
-```
+- 📊 Executive Analytics Dashboard
+- 🤖 AI Demand Forecasting
+- 📦 Inventory Replenishment Recommendations
+- 📈 Interactive Data Visualization
+- 📄 PDF & Excel Export
+- 🧠 Machine Learning Pipeline
 
 ---
 
-## Technology Stack
+## 🚀 Features
 
-### Backend
+### Decision Intelligence
+- Executive Analytics Dashboard
+- AI Recommendation Workspace
+- Decision History
+- Decision Details
+- PDF Export
+- Excel Export
 
-- Python 3
-- FastAPI
-- Pydantic
-- Pytest
-
-### Architecture
-
-- Clean Architecture
-- Domain-Driven Design
-- Repository Pattern
-
-### Database
-
-- PostgreSQL *(planned)*
-- SQLAlchemy *(planned)*
-- Alembic *(planned)*
-
-### Frontend
-
-- React *(planned)*
-- Next.js *(planned)*
-
-### AI
-
-- Demand Forecasting *(planned)*
-- Scenario Simulation *(planned)*
-- Explainable AI *(planned)*
+### Artificial Intelligence
+- Synthetic Data Generation
+- Product Generator
+- Supplier Generator
+- Inventory Generator
+- Sales Generator
+- Feature Engineering
+- Demand Forecasting
+- Random Forest Model
+- Prediction REST API
+- AI Forecast Dashboard
 
 ---
 
-## Current Features
-
-- FastAPI REST API
-- Swagger Documentation
-- Decision Domain Model
-- Decision Context
-- Decision Knowledge
-- Strategy Model
-- Knowledge Engine
-- Strategy Generator
-- Strategy Evaluator
-- Recommendation Engine
-- In-Memory Repository
-- Unit Tests
-
----
-
-## Project Structure
+## 🏗 Architecture
 
 ```text
-backend/
-│
-├── app/
-│   ├── api/
-│   ├── domain/
-│   ├── engines/
-│   ├── repositories/
-│   ├── services/
-│   └── main.py
-│
-├── tests/
-│
-└── requirements.txt
-```
-
----
-
-## Running the Project
-
-### Create Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-### Activate
-
-Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-Linux / macOS
-
-```bash
-source .venv/bin/activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run
-
-```bash
-python -m uvicorn app.main:app --reload
-```
-
-### Run Tests
-
-```bash
-python -m pytest
-```
-
----
-
-## Roadmap
-
-### Phase 1
-
-- ✅ Backend Foundation
-
-### Phase 2
-
-- 🚧 Decision Intelligence
-
-### Phase 3
-
-- PostgreSQL
-
-### Phase 4
-
-- React Dashboard
-
-### Phase 5
-
-- AI Integration
-
-### Phase 6
-
-- Evaluation
-
----
-
-## Author
-
-Graduation Project
-
-AI Decision Laboratory
-
-2026
+                 User
+                   │
+                   ▼
+          React Frontend (Vite)
+                   │
+             REST API (HTTP)
+                   │
+                   ▼
+            FastAPI Backend
+                   │
+      ┌────────────┼────────────┐
+      │            │            │
+      ▼            ▼            ▼
+ Decision API  Analytics API  AI Prediction API
+      │            │            │
+      └────────────┼────────────┘
+                   │
+            PostgreSQL Database
+                   │
+                   ▼
+               AI Module
+      ├── Synthetic Data Generation
+      ├── Feature Engineering
+      ├── Model Training
+      └── Demand Prediction

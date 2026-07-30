@@ -1,0 +1,501 @@
+product_id,product_name,category,unit_cost,selling_price,safety_stock
+P00001,Olive Oil 001,Grocery,1.48,1.75,157
+P00002,Cereal Box 002,Grocery,13.86,18.96,122
+P00003,Children's Story 003,Books,6.75,9.83,59
+P00004,Laptop Stand 004,Electronics,605.12,899.46,54
+P00005,Office Chair 005,Furniture,1457.79,2179.01,37
+P00006,Denim Jeans 006,Clothing,109.25,201.05,59
+P00007,Football 007,Sports,69.06,108.14,42
+P00008,Vitamin C Tablets 008,Pharmacy,81.68,133.78,118
+P00009,Children's Story 009,Books,9.33,14.7,110
+P00010,Water Bottle 010,Sports,297.13,532.81,22
+P00011,Wooden Desk 011,Furniture,2364.59,4704.72,37
+P00012,Olive Oil 012,Grocery,8.22,10.16,193
+P00013,Water Bottle 013,Sports,190.53,337.07,64
+P00014,Olive Oil 014,Grocery,12.57,14.47,286
+P00015,Denim Jeans 015,Clothing,77.41,137.01,111
+P00016,Yoga Mat 016,Sports,424.57,782.57,34
+P00017,Gym Gloves 017,Sports,212.56,286.18,78
+P00018,Water Bottle 018,Sports,122.06,201.33,76
+P00019,Desk Organizer 019,Office Supplies,13.14,18.0,193
+P00020,Antiseptic Spray 020,Pharmacy,75.97,110.69,124
+P00021,Tennis Racket 021,Sports,125.27,250.32,52
+P00022,Tomato Sauce 022,Grocery,15.36,20.86,139
+P00023,Running Shorts 023,Clothing,121.93,234.37,48
+P00024,Children's Story 024,Books,37.77,63.48,62
+P00025,USB-C Charger 025,Electronics,712.26,887.35,54
+P00026,Yoga Mat 026,Sports,73.55,118.0,49
+P00027,Vitamin C Tablets 027,Pharmacy,97.33,161.29,114
+P00028,Pain Relief Gel 028,Pharmacy,84.96,127.83,75
+P00029,Gym Gloves 029,Sports,386.01,647.56,69
+P00030,USB-C Charger 030,Electronics,639.05,891.76,27
+P00031,Vitamin C Tablets 031,Pharmacy,27.75,37.31,122
+P00032,Cereal Box 032,Grocery,14.91,20.05,294
+P00033,Denim Jeans 033,Clothing,32.33,63.86,110
+P00034,Allergy Pills 034,Pharmacy,55.13,86.22,77
+P00035,Storage Cabinet 035,Furniture,2196.26,3468.54,31
+P00036,Dumbbell Set 036,Sports,230.29,382.81,27
+P00037,Wooden Desk 037,Furniture,379.27,498.64,27
+P00038,Wooden Desk 038,Furniture,220.13,395.24,11
+P00039,Cereal Box 039,Grocery,18.2,24.71,118
+P00040,Wooden Desk 040,Furniture,979.74,1606.57,27
+P00041,Ballpoint Pens 041,Office Supplies,20.95,32.19,154
+P00042,Pasta Pack 042,Grocery,2.84,3.49,208
+P00043,Notebook Pack 043,Office Supplies,69.38,92.07,75
+P00044,Notebook 044,Books,45.05,84.71,43
+P00045,Wooden Desk 045,Furniture,732.58,1182.41,23
+P00046,Antiseptic Spray 046,Pharmacy,48.95,84.42,59
+P00047,Basmati Rice 047,Grocery,1.96,2.74,103
+P00048,Bookshelf 048,Furniture,665.67,1091.66,16
+P00049,USB-C Charger 049,Electronics,248.17,298.02,44
+P00050,Sticky Notes 050,Office Supplies,24.25,39.97,192
+P00051,Desk Organizer 051,Office Supplies,14.07,20.38,64
+P00052,Laptop Stand 052,Electronics,773.18,945.5,57
+P00053,Cotton T-Shirt 053,Clothing,22.68,45.54,63
+P00054,Cereal Box 054,Grocery,13.83,16.19,130
+P00055,Bookshelf 055,Furniture,1820.97,2417.92,12
+P00056,Football 056,Sports,468.66,676.27,65
+P00057,Coffee Table 057,Furniture,943.72,1313.29,30
+P00058,Notebook Pack 058,Office Supplies,26.66,44.68,68
+P00059,Notebook Pack 059,Office Supplies,50.45,79.79,75
+P00060,Office Chair 060,Furniture,1616.48,2251.3,21
+P00061,Bed Frame 061,Furniture,1234.68,1741.42,36
+P00062,Allergy Pills 062,Pharmacy,63.11,113.11,133
+P00063,Bluetooth Speaker 063,Electronics,701.08,996.82,26
+P00064,Pain Relief Gel 064,Pharmacy,15.97,20.19,120
+P00065,Pain Relief Gel 065,Pharmacy,31.77,42.14,93
+P00066,Vitamin C Tablets 066,Pharmacy,53.01,71.6,56
+P00067,Notebook 067,Books,50.61,72.19,72
+P00068,Antiseptic Spray 068,Pharmacy,20.35,29.81,140
+P00069,Noise Cancelling Headphones 069,Electronics,200.69,316.69,29
+P00070,Laptop Stand 070,Electronics,851.14,1219.69,29
+P00071,Hoodie 071,Clothing,20.65,38.51,45
+P00072,Bed Frame 072,Furniture,2109.79,3727.69,21
+P00073,Notebook 073,Books,58.56,108.32,60
+P00074,Running Shorts 074,Clothing,133.99,204.31,82
+P00075,Bookshelf 075,Furniture,947.06,1753.16,13
+P00076,USB-C Charger 076,Electronics,872.73,1124.93,49
+P00077,Vitamin C Tablets 077,Pharmacy,82.95,142.91,78
+P00078,Coffee Table 078,Furniture,1315.7,1967.0,12
+P00079,Gym Gloves 079,Sports,327.91,518.02,73
+P00080,Dumbbell Set 080,Sports,470.83,650.09,36
+P00081,First Aid Kit 081,Pharmacy,8.63,13.45,94
+P00082,Tennis Racket 082,Sports,229.47,456.41,27
+P00083,Bed Frame 083,Furniture,913.22,1640.28,10
+P00084,Coffee Table 084,Furniture,1219.82,1645.51,31
+P00085,Football 085,Sports,338.43,469.48,77
+P00086,Cough Syrup 086,Pharmacy,68.35,95.4,139
+P00087,Casual Shirt 087,Clothing,40.9,88.55,88
+P00088,Cotton T-Shirt 088,Clothing,98.09,176.66,110
+P00089,Allergy Pills 089,Pharmacy,32.26,47.03,124
+P00090,Gym Gloves 090,Sports,243.19,391.42,33
+P00091,Sticky Notes 091,Office Supplies,63.91,113.75,93
+P00092,Black Tea 092,Grocery,6.39,8.3,258
+P00093,Black Tea 093,Grocery,16.55,21.93,272
+P00094,Wooden Desk 094,Furniture,2458.38,3449.47,11
+P00095,Stapler 095,Office Supplies,49.68,83.67,166
+P00096,Wooden Desk 096,Furniture,2211.37,3469.16,22
+P00097,Running Shorts 097,Clothing,103.57,155.93,53
+P00098,Bookshelf 098,Furniture,692.48,1364.58,26
+P00099,Laptop Stand 099,Electronics,601.67,942.81,27
+P00100,Winter Jacket 100,Clothing,123.19,267.02,111
+P00101,Water Bottle 101,Sports,476.02,915.86,59
+P00102,Study Manual 102,Books,50.68,87.61,50
+P00103,Desk Organizer 103,Office Supplies,37.11,62.19,120
+P00104,Sticky Notes 104,Office Supplies,50.89,73.14,69
+P00105,Vitamin C Tablets 105,Pharmacy,27.28,38.23,119
+P00106,Casual Shirt 106,Clothing,35.36,66.58,59
+P00107,Bookshelf 107,Furniture,379.84,602.17,27
+P00108,Children's Story 108,Books,8.42,16.0,79
+P00109,Laptop Stand 109,Electronics,871.06,1312.02,44
+P00110,Laptop Stand 110,Electronics,948.47,1251.45,44
+P00111,Office Chair 111,Furniture,1567.04,2336.54,25
+P00112,Study Manual 112,Books,23.49,42.46,81
+P00113,Winter Jacket 113,Clothing,128.47,310.84,119
+P00114,Wireless Mouse 114,Electronics,916.24,1316.41,21
+P00115,Programming Guide 115,Books,12.46,20.9,36
+P00116,Business Book 116,Books,23.0,38.47,73
+P00117,Vitamin C Tablets 117,Pharmacy,76.44,129.88,82
+P00118,Ballpoint Pens 118,Office Supplies,3.51,5.51,139
+P00119,Basmati Rice 119,Grocery,15.84,20.52,293
+P00120,Wooden Desk 120,Furniture,758.21,996.49,14
+P00121,Running Shorts 121,Clothing,78.93,127.42,67
+P00122,First Aid Kit 122,Pharmacy,77.86,101.27,127
+P00123,Basmati Rice 123,Grocery,15.78,18.13,179
+P00124,Laptop Stand 124,Electronics,936.0,1338.78,44
+P00125,Wooden Desk 125,Furniture,412.79,736.18,30
+P00126,Cereal Box 126,Grocery,14.25,16.96,275
+P00127,Black Tea 127,Grocery,16.13,20.48,110
+P00128,Programming Guide 128,Books,41.38,59.64,112
+P00129,Laptop Stand 129,Electronics,864.62,1321.95,26
+P00130,Dumbbell Set 130,Sports,325.08,611.18,65
+P00131,Programming Guide 131,Books,14.69,25.16,113
+P00132,Printer Paper 132,Office Supplies,38.26,65.53,118
+P00133,Bookshelf 133,Furniture,2526.05,3437.11,38
+P00134,Bookshelf 134,Furniture,2301.33,3909.72,31
+P00135,Tennis Racket 135,Sports,33.78,64.04,31
+P00136,Bed Frame 136,Furniture,1193.51,1767.41,18
+P00137,Vitamin C Tablets 137,Pharmacy,57.8,87.28,74
+P00138,Wooden Desk 138,Furniture,2216.21,3639.03,34
+P00139,Notebook Pack 139,Office Supplies,52.38,80.95,54
+P00140,First Aid Kit 140,Pharmacy,26.05,42.07,89
+P00141,Water Bottle 141,Sports,247.17,413.18,47
+P00142,Football 142,Sports,188.87,305.52,39
+P00143,Storage Cabinet 143,Furniture,537.84,771.7,13
+P00144,Casual Shirt 144,Clothing,40.86,91.47,75
+P00145,Pain Relief Gel 145,Pharmacy,98.15,166.81,87
+P00146,Dumbbell Set 146,Sports,106.13,139.02,54
+P00147,First Aid Kit 147,Pharmacy,9.32,11.49,87
+P00148,Cotton T-Shirt 148,Clothing,101.11,227.78,53
+P00149,Vitamin C Tablets 149,Pharmacy,49.59,72.61,73
+P00150,Antiseptic Spray 150,Pharmacy,94.4,140.34,58
+P00151,Ballpoint Pens 151,Office Supplies,7.78,12.56,63
+P00152,Denim Jeans 152,Clothing,124.5,304.92,50
+P00153,Cereal Box 153,Grocery,11.6,14.21,252
+P00154,Bookshelf 154,Furniture,2371.94,3715.09,39
+P00155,Allergy Pills 155,Pharmacy,86.72,155.58,89
+P00156,Smart Watch 156,Electronics,648.67,970.43,33
+P00157,Wooden Desk 157,Furniture,941.01,1276.79,17
+P00158,Cereal Box 158,Grocery,3.97,4.85,276
+P00159,Sticky Notes 159,Office Supplies,24.72,35.0,122
+P00160,Sticky Notes 160,Office Supplies,7.55,10.7,117
+P00161,Wooden Desk 161,Furniture,1390.39,2337.51,30
+P00162,Cough Syrup 162,Pharmacy,83.53,103.81,71
+P00163,First Aid Kit 163,Pharmacy,46.72,69.2,88
+P00164,Business Book 164,Books,56.85,96.66,93
+P00165,Black Tea 165,Grocery,12.36,16.89,288
+P00166,Allergy Pills 166,Pharmacy,7.46,9.98,136
+P00167,Noise Cancelling Headphones 167,Electronics,999.62,1468.35,37
+P00168,Smart Watch 168,Electronics,786.8,999.3,53
+P00169,Stapler 169,Office Supplies,73.45,102.15,199
+P00170,Printer Paper 170,Office Supplies,77.59,119.1,154
+P00171,Tennis Racket 171,Sports,341.66,649.3,41
+P00172,Notebook Pack 172,Office Supplies,24.48,43.39,190
+P00173,Stapler 173,Office Supplies,8.87,12.65,79
+P00174,Wireless Mouse 174,Electronics,691.89,980.43,46
+P00175,Storage Cabinet 175,Furniture,1651.63,2866.97,25
+P00176,Ballpoint Pens 176,Office Supplies,61.28,85.9,190
+P00177,Vitamin C Tablets 177,Pharmacy,46.62,75.48,65
+P00178,Bed Frame 178,Furniture,2187.39,3319.42,10
+P00179,Business Book 179,Books,10.13,20.21,44
+P00180,Black Tea 180,Grocery,13.31,15.26,283
+P00181,Pain Relief Gel 181,Pharmacy,44.47,66.24,110
+P00182,Sticky Notes 182,Office Supplies,45.0,67.13,180
+P00183,Hoodie 183,Clothing,131.64,233.83,93
+P00184,Allergy Pills 184,Pharmacy,82.95,113.62,88
+P00185,Printer Paper 185,Office Supplies,69.49,105.85,173
+P00186,Football 186,Sports,284.92,478.78,49
+P00187,Wooden Desk 187,Furniture,2946.17,4322.51,22
+P00188,Business Book 188,Books,7.4,13.67,120
+P00189,Notebook 189,Books,59.36,111.33,113
+P00190,Notebook Pack 190,Office Supplies,77.26,105.31,134
+P00191,Sticky Notes 191,Office Supplies,9.78,17.17,53
+P00192,Cotton T-Shirt 192,Clothing,70.35,151.59,59
+P00193,Sticky Notes 193,Office Supplies,62.96,90.19,151
+P00194,Pasta Pack 194,Grocery,17.18,23.29,236
+P00195,Gym Gloves 195,Sports,320.86,616.44,51
+P00196,Bluetooth Speaker 196,Electronics,655.71,848.43,38
+P00197,Tomato Sauce 197,Grocery,9.25,10.45,262
+P00198,Basmati Rice 198,Grocery,9.43,12.34,107
+P00199,Tennis Racket 199,Sports,402.15,605.38,43
+P00200,Denim Jeans 200,Clothing,47.97,91.72,63
+P00201,Casual Shirt 201,Clothing,25.66,60.84,119
+P00202,Bookshelf 202,Furniture,1593.47,2721.98,17
+P00203,Cough Syrup 203,Pharmacy,48.66,77.86,109
+P00204,Hoodie 204,Clothing,24.97,61.06,115
+P00205,Notebook 205,Books,42.97,71.94,68
+P00206,Children's Story 206,Books,51.93,76.03,78
+P00207,Yoga Mat 207,Sports,295.91,590.31,38
+P00208,Study Manual 208,Books,20.1,34.97,117
+P00209,Bluetooth Speaker 209,Electronics,919.56,1377.56,38
+P00210,Water Bottle 210,Sports,125.12,179.31,36
+P00211,Hoodie 211,Clothing,99.81,239.88,45
+P00212,Notebook Pack 212,Office Supplies,4.6,6.82,83
+P00213,Pain Relief Gel 213,Pharmacy,36.04,52.23,75
+P00214,Dumbbell Set 214,Sports,274.81,532.98,73
+P00215,First Aid Kit 215,Pharmacy,91.83,162.22,87
+P00216,Dumbbell Set 216,Sports,406.03,660.95,24
+P00217,Bed Frame 217,Furniture,2608.39,4713.23,22
+P00218,Gym Gloves 218,Sports,63.35,99.85,36
+P00219,Black Tea 219,Grocery,9.64,12.55,272
+P00220,Study Manual 220,Books,50.23,98.66,43
+P00221,Bed Frame 221,Furniture,1520.14,2635.44,40
+P00222,Water Bottle 222,Sports,459.32,668.29,24
+P00223,Notebook Pack 223,Office Supplies,72.93,105.83,154
+P00224,Cotton T-Shirt 224,Clothing,21.12,32.47,103
+P00225,Pasta Pack 225,Grocery,5.46,6.89,199
+P00226,Gym Gloves 226,Sports,341.83,622.2,80
+P00227,Study Manual 227,Books,37.3,68.48,83
+P00228,Basmati Rice 228,Grocery,16.84,21.63,171
+P00229,Football 229,Sports,124.29,200.27,35
+P00230,Black Tea 230,Grocery,19.64,23.77,265
+P00231,Laptop Stand 231,Electronics,458.33,584.79,27
+P00232,Basmati Rice 232,Grocery,13.59,17.57,252
+P00233,Noise Cancelling Headphones 233,Electronics,808.12,1048.48,28
+P00234,Bed Frame 234,Furniture,392.11,719.76,16
+P00235,Wooden Desk 235,Furniture,2476.55,3623.44,34
+P00236,Noise Cancelling Headphones 236,Electronics,349.55,557.05,28
+P00237,Pain Relief Gel 237,Pharmacy,80.86,102.37,53
+P00238,USB-C Charger 238,Electronics,422.42,640.12,57
+P00239,Noise Cancelling Headphones 239,Electronics,256.82,313.57,46
+P00240,Black Tea 240,Grocery,15.17,18.85,299
+P00241,Basmati Rice 241,Grocery,9.59,11.19,257
+P00242,Antiseptic Spray 242,Pharmacy,48.51,86.27,57
+P00243,Novel 243,Books,28.45,41.67,86
+P00244,Black Tea 244,Grocery,7.12,8.15,132
+P00245,Tennis Racket 245,Sports,202.83,348.5,38
+P00246,Study Manual 246,Books,10.45,19.03,113
+P00247,Coffee Table 247,Furniture,1404.2,2698.4,23
+P00248,Stapler 248,Office Supplies,33.1,55.11,130
+P00249,Water Bottle 249,Sports,339.25,529.91,29
+P00250,Stapler 250,Office Supplies,7.24,12.42,73
+P00251,Cereal Box 251,Grocery,15.15,18.36,133
+P00252,Smart Watch 252,Electronics,627.82,894.41,41
+P00253,Pasta Pack 253,Grocery,8.81,12.0,292
+P00254,Wireless Mouse 254,Electronics,971.56,1399.21,42
+P00255,Office Chair 255,Furniture,633.24,1036.95,37
+P00256,Football 256,Sports,425.78,663.06,68
+P00257,Bed Frame 257,Furniture,2460.22,4653.77,34
+P00258,Wireless Mouse 258,Electronics,648.1,948.26,37
+P00259,Hoodie 259,Clothing,51.89,117.4,83
+P00260,Wireless Mouse 260,Electronics,263.27,331.01,45
+P00261,Casual Shirt 261,Clothing,115.03,284.33,51
+P00262,Coffee Table 262,Furniture,1253.34,2027.34,15
+P00263,Allergy Pills 263,Pharmacy,73.55,122.54,122
+P00264,Cereal Box 264,Grocery,17.78,20.39,293
+P00265,Laptop Stand 265,Electronics,706.57,924.79,47
+P00266,Notebook Pack 266,Office Supplies,34.31,48.3,181
+P00267,Gym Gloves 267,Sports,226.36,339.15,63
+P00268,Stapler 268,Office Supplies,43.1,62.68,106
+P00269,Bluetooth Speaker 269,Electronics,106.92,141.2,33
+P00270,First Aid Kit 270,Pharmacy,32.5,41.34,113
+P00271,Notebook 271,Books,14.66,23.87,120
+P00272,Tennis Racket 272,Sports,54.6,103.92,22
+P00273,Noise Cancelling Headphones 273,Electronics,513.78,632.54,40
+P00274,Programming Guide 274,Books,36.54,66.71,83
+P00275,Cereal Box 275,Grocery,8.7,12.09,143
+P00276,Stapler 276,Office Supplies,66.9,117.74,72
+P00277,Basmati Rice 277,Grocery,5.62,7.17,234
+P00278,Programming Guide 278,Books,52.88,97.69,58
+P00279,Winter Jacket 279,Clothing,25.31,53.99,107
+P00280,Storage Cabinet 280,Furniture,2736.58,4226.82,33
+P00281,Denim Jeans 281,Clothing,46.9,77.22,65
+P00282,Casual Shirt 282,Clothing,117.63,253.55,62
+P00283,Stapler 283,Office Supplies,38.19,60.41,198
+P00284,Tennis Racket 284,Sports,434.84,756.21,29
+P00285,Cereal Box 285,Grocery,9.91,12.78,170
+P00286,Laptop Stand 286,Electronics,416.75,512.47,49
+P00287,Smart Watch 287,Electronics,151.2,231.74,24
+P00288,Cereal Box 288,Grocery,12.69,15.89,218
+P00289,USB-C Charger 289,Electronics,504.76,769.22,32
+P00290,Notebook Pack 290,Office Supplies,41.11,73.13,165
+P00291,Dumbbell Set 291,Sports,491.55,668.03,61
+P00292,Noise Cancelling Headphones 292,Electronics,322.97,444.12,48
+P00293,Running Shorts 293,Clothing,64.13,155.06,89
+P00294,Water Bottle 294,Sports,345.87,462.31,60
+P00295,Tennis Racket 295,Sports,51.64,70.55,63
+P00296,Pain Relief Gel 296,Pharmacy,28.94,49.51,127
+P00297,Football 297,Sports,59.12,104.32,78
+P00298,Pain Relief Gel 298,Pharmacy,96.93,156.94,100
+P00299,Olive Oil 299,Grocery,6.88,8.35,184
+P00300,Basmati Rice 300,Grocery,13.27,16.28,192
+P00301,Tennis Racket 301,Sports,168.26,330.77,41
+P00302,Coffee Table 302,Furniture,834.32,1164.96,12
+P00303,Cereal Box 303,Grocery,10.65,13.44,289
+P00304,Bluetooth Speaker 304,Electronics,695.74,1078.78,59
+P00305,Children's Story 305,Books,13.48,20.33,118
+P00306,Casual Shirt 306,Clothing,112.36,173.45,86
+P00307,Storage Cabinet 307,Furniture,2914.85,5035.16,34
+P00308,Ballpoint Pens 308,Office Supplies,20.25,28.75,170
+P00309,Tennis Racket 309,Sports,345.59,587.26,48
+P00310,Pain Relief Gel 310,Pharmacy,78.92,118.52,103
+P00311,Office Chair 311,Furniture,2443.53,3413.32,18
+P00312,Sticky Notes 312,Office Supplies,70.18,110.69,76
+P00313,Pasta Pack 313,Grocery,6.42,8.53,169
+P00314,Running Shorts 314,Clothing,127.19,202.45,68
+P00315,Gym Gloves 315,Sports,466.63,742.14,45
+P00316,Dumbbell Set 316,Sports,133.17,265.83,43
+P00317,Bluetooth Speaker 317,Electronics,386.82,479.51,41
+P00318,Casual Shirt 318,Clothing,20.17,48.76,100
+P00319,Cotton T-Shirt 319,Clothing,117.44,231.25,118
+P00320,Cereal Box 320,Grocery,1.36,1.58,138
+P00321,Novel 321,Books,11.12,17.49,68
+P00322,Laptop Stand 322,Electronics,314.6,457.93,59
+P00323,Cereal Box 323,Grocery,3.11,4.27,252
+P00324,USB-C Charger 324,Electronics,668.76,956.34,29
+P00325,Business Book 325,Books,5.09,8.2,103
+P00326,Cotton T-Shirt 326,Clothing,104.69,166.0,86
+P00327,Laptop Stand 327,Electronics,451.41,626.58,60
+P00328,Yoga Mat 328,Sports,141.75,185.89,70
+P00329,Gym Gloves 329,Sports,135.74,238.9,26
+P00330,Water Bottle 330,Sports,84.04,129.98,41
+P00331,Casual Shirt 331,Clothing,127.1,277.67,101
+P00332,Cotton T-Shirt 332,Clothing,124.55,194.68,98
+P00333,Cough Syrup 333,Pharmacy,24.15,40.44,55
+P00334,Antiseptic Spray 334,Pharmacy,53.96,96.78,119
+P00335,Cough Syrup 335,Pharmacy,8.48,13.47,86
+P00336,USB-C Charger 336,Electronics,879.22,1171.8,27
+P00337,Programming Guide 337,Books,53.92,99.54,79
+P00338,Hoodie 338,Clothing,81.99,163.78,106
+P00339,Olive Oil 339,Grocery,14.81,16.64,254
+P00340,Cough Syrup 340,Pharmacy,35.52,44.33,134
+P00341,First Aid Kit 341,Pharmacy,47.36,77.23,71
+P00342,Desk Organizer 342,Office Supplies,29.42,38.87,140
+P00343,Novel 343,Books,20.1,39.96,37
+P00344,Notebook 344,Books,24.98,46.98,116
+P00345,Wireless Mouse 345,Electronics,228.5,329.73,48
+P00346,Hoodie 346,Clothing,24.08,54.87,86
+P00347,Study Manual 347,Books,57.22,81.22,49
+P00348,Desk Organizer 348,Office Supplies,76.01,112.95,69
+P00349,Denim Jeans 349,Clothing,86.48,164.14,75
+P00350,Pasta Pack 350,Grocery,1.49,1.72,232
+P00351,Olive Oil 351,Grocery,5.97,7.03,214
+P00352,Vitamin C Tablets 352,Pharmacy,70.93,127.62,75
+P00353,Cotton T-Shirt 353,Clothing,130.13,254.02,96
+P00354,Gym Gloves 354,Sports,340.56,611.88,55
+P00355,First Aid Kit 355,Pharmacy,89.68,153.43,141
+P00356,Denim Jeans 356,Clothing,122.15,245.37,55
+P00357,Winter Jacket 357,Clothing,46.96,93.64,86
+P00358,Gym Gloves 358,Sports,244.35,485.79,28
+P00359,Tomato Sauce 359,Grocery,2.25,2.74,283
+P00360,Notebook Pack 360,Office Supplies,43.0,72.44,197
+P00361,Running Shorts 361,Clothing,146.27,313.36,97
+P00362,Water Bottle 362,Sports,81.6,153.44,55
+P00363,Cotton T-Shirt 363,Clothing,118.65,193.28,104
+P00364,Black Tea 364,Grocery,10.84,12.91,141
+P00365,Coffee Table 365,Furniture,1168.86,2289.37,38
+P00366,Black Tea 366,Grocery,5.76,7.43,241
+P00367,Winter Jacket 367,Clothing,99.38,210.13,51
+P00368,Casual Shirt 368,Clothing,94.89,197.43,61
+P00369,Yoga Mat 369,Sports,424.41,719.18,72
+P00370,Black Tea 370,Grocery,1.86,2.4,247
+P00371,Office Chair 371,Furniture,2347.49,3736.29,30
+P00372,Stapler 372,Office Supplies,71.34,112.2,127
+P00373,Bookshelf 373,Furniture,2453.13,4365.33,19
+P00374,Pasta Pack 374,Grocery,14.08,16.16,206
+P00375,Sticky Notes 375,Office Supplies,17.91,28.72,130
+P00376,Dumbbell Set 376,Sports,372.42,708.55,45
+P00377,Tennis Racket 377,Sports,267.19,367.21,35
+P00378,Basmati Rice 378,Grocery,6.08,7.14,124
+P00379,Pain Relief Gel 379,Pharmacy,94.81,162.93,103
+P00380,Denim Jeans 380,Clothing,124.82,303.78,80
+P00381,Hoodie 381,Clothing,82.27,165.75,103
+P00382,Stapler 382,Office Supplies,3.81,6.75,179
+P00383,Coffee Table 383,Furniture,802.4,1241.33,11
+P00384,Printer Paper 384,Office Supplies,48.61,83.68,170
+P00385,Smart Watch 385,Electronics,862.46,1183.62,36
+P00386,Yoga Mat 386,Sports,386.65,601.69,45
+P00387,Bed Frame 387,Furniture,1215.07,1825.06,22
+P00388,Ballpoint Pens 388,Office Supplies,61.62,88.72,80
+P00389,Cereal Box 389,Grocery,8.48,11.35,186
+P00390,Tennis Racket 390,Sports,382.38,550.38,52
+P00391,Laptop Stand 391,Electronics,140.77,176.64,41
+P00392,Printer Paper 392,Office Supplies,13.62,23.79,85
+P00393,Football 393,Sports,98.0,195.36,67
+P00394,Water Bottle 394,Sports,263.51,436.58,51
+P00395,First Aid Kit 395,Pharmacy,50.11,60.63,92
+P00396,Tomato Sauce 396,Grocery,19.62,25.02,285
+P00397,Noise Cancelling Headphones 397,Electronics,637.22,832.34,57
+P00398,Bed Frame 398,Furniture,2219.92,3792.66,15
+P00399,Children's Story 399,Books,13.13,23.74,34
+P00400,Olive Oil 400,Grocery,4.62,5.69,207
+P00401,Business Book 401,Books,42.98,70.75,108
+P00402,USB-C Charger 402,Electronics,735.2,1034.77,55
+P00403,Stapler 403,Office Supplies,42.99,62.63,94
+P00404,Water Bottle 404,Sports,282.21,500.39,75
+P00405,Cough Syrup 405,Pharmacy,62.96,82.81,81
+P00406,Cough Syrup 406,Pharmacy,26.36,47.02,88
+P00407,Coffee Table 407,Furniture,2132.67,3502.49,25
+P00408,Antiseptic Spray 408,Pharmacy,32.34,49.94,119
+P00409,Programming Guide 409,Books,50.01,98.66,48
+P00410,Laptop Stand 410,Electronics,358.87,533.16,42
+P00411,Cough Syrup 411,Pharmacy,76.0,100.96,118
+P00412,Pain Relief Gel 412,Pharmacy,18.04,28.31,125
+P00413,Storage Cabinet 413,Furniture,342.14,661.57,17
+P00414,Bookshelf 414,Furniture,346.98,551.46,32
+P00415,Olive Oil 415,Grocery,13.94,15.91,240
+P00416,Business Book 416,Books,40.91,78.89,90
+P00417,Storage Cabinet 417,Furniture,2316.55,3477.31,19
+P00418,Bluetooth Speaker 418,Electronics,917.14,1133.39,56
+P00419,Wireless Mouse 419,Electronics,921.91,1170.85,31
+P00420,Novel 420,Books,48.34,73.08,67
+P00421,USB-C Charger 421,Electronics,368.55,531.12,41
+P00422,Ballpoint Pens 422,Office Supplies,79.15,124.4,176
+P00423,Ballpoint Pens 423,Office Supplies,23.28,39.68,134
+P00424,Sticky Notes 424,Office Supplies,52.57,87.23,53
+P00425,Dumbbell Set 425,Sports,399.57,678.25,68
+P00426,Running Shorts 426,Clothing,97.48,208.48,91
+P00427,Dumbbell Set 427,Sports,61.63,108.99,31
+P00428,Stapler 428,Office Supplies,27.24,38.79,116
+P00429,Coffee Table 429,Furniture,1450.86,2157.28,20
+P00430,Wireless Mouse 430,Electronics,335.4,450.72,35
+P00431,Cereal Box 431,Grocery,9.84,11.3,275
+P00432,Cough Syrup 432,Pharmacy,70.58,111.74,87
+P00433,Bookshelf 433,Furniture,813.56,1133.69,14
+P00434,Gym Gloves 434,Sports,219.61,369.93,50
+P00435,Office Chair 435,Furniture,2333.21,4144.34,29
+P00436,Notebook Pack 436,Office Supplies,43.2,63.97,194
+P00437,Noise Cancelling Headphones 437,Electronics,845.9,1320.58,32
+P00438,Cotton T-Shirt 438,Clothing,37.21,87.61,96
+P00439,Bed Frame 439,Furniture,2207.37,3624.9,38
+P00440,Stapler 440,Office Supplies,65.08,99.36,181
+P00441,Sticky Notes 441,Office Supplies,45.99,72.64,128
+P00442,Noise Cancelling Headphones 442,Electronics,456.35,696.66,33
+P00443,Cereal Box 443,Grocery,1.86,2.24,116
+P00444,Wireless Mouse 444,Electronics,941.12,1155.33,50
+P00445,First Aid Kit 445,Pharmacy,43.84,72.84,148
+P00446,Business Book 446,Books,25.6,49.53,87
+P00447,Notebook 447,Books,9.41,18.62,99
+P00448,Gym Gloves 448,Sports,76.94,153.49,45
+P00449,Cotton T-Shirt 449,Clothing,113.26,195.11,40
+P00450,Allergy Pills 450,Pharmacy,48.99,79.93,104
+P00451,Notebook 451,Books,50.28,77.86,74
+P00452,Vitamin C Tablets 452,Pharmacy,22.91,39.52,147
+P00453,Bluetooth Speaker 453,Electronics,828.53,1133.18,21
+P00454,Bed Frame 454,Furniture,388.41,666.42,24
+P00455,Bluetooth Speaker 455,Electronics,320.26,389.98,48
+P00456,Bed Frame 456,Furniture,2312.28,4262.1,14
+P00457,Cough Syrup 457,Pharmacy,27.25,47.68,123
+P00458,Gym Gloves 458,Sports,133.71,255.84,62
+P00459,Bed Frame 459,Furniture,1357.97,2026.92,27
+P00460,Cotton T-Shirt 460,Clothing,99.51,191.78,103
+P00461,Gym Gloves 461,Sports,471.96,835.34,70
+P00462,Tennis Racket 462,Sports,354.23,561.73,39
+P00463,Hoodie 463,Clothing,116.85,230.61,68
+P00464,Running Shorts 464,Clothing,123.78,298.9,111
+P00465,Programming Guide 465,Books,35.65,52.78,61
+P00466,Coffee Table 466,Furniture,1124.74,1524.42,24
+P00467,Black Tea 467,Grocery,11.18,15.08,113
+P00468,Notebook 468,Books,42.05,74.08,39
+P00469,Coffee Table 469,Furniture,1542.3,2943.68,20
+P00470,Smart Watch 470,Electronics,290.63,370.85,27
+P00471,Stapler 471,Office Supplies,73.33,120.83,102
+P00472,Bookshelf 472,Furniture,1745.82,3217.3,22
+P00473,Tennis Racket 473,Sports,168.04,260.76,76
+P00474,Printer Paper 474,Office Supplies,9.69,17.35,170
+P00475,Wooden Desk 475,Furniture,1237.97,1968.06,28
+P00476,Winter Jacket 476,Clothing,17.19,35.3,114
+P00477,Business Book 477,Books,21.24,32.24,59
+P00478,Coffee Table 478,Furniture,1598.04,2809.71,31
+P00479,First Aid Kit 479,Pharmacy,77.52,115.75,142
+P00480,Ballpoint Pens 480,Office Supplies,37.94,63.22,140
+P00481,Casual Shirt 481,Clothing,112.24,223.17,109
+P00482,Smart Watch 482,Electronics,571.55,877.69,24
+P00483,Bluetooth Speaker 483,Electronics,787.9,1075.45,60
+P00484,Pasta Pack 484,Grocery,14.44,15.92,229
+P00485,Gym Gloves 485,Sports,49.02,85.61,79
+P00486,Desk Organizer 486,Office Supplies,53.42,69.87,186
+P00487,Children's Story 487,Books,5.65,9.7,65
+P00488,Antiseptic Spray 488,Pharmacy,6.63,11.19,136
+P00489,Denim Jeans 489,Clothing,29.45,47.01,59
+P00490,Coffee Table 490,Furniture,1935.39,2857.98,21
+P00491,Children's Story 491,Books,9.35,18.47,88
+P00492,Office Chair 492,Furniture,2972.65,4334.42,31
+P00493,Laptop Stand 493,Electronics,184.15,248.92,55
+P00494,Laptop Stand 494,Electronics,673.07,996.91,25
+P00495,Children's Story 495,Books,40.47,64.7,42
+P00496,Laptop Stand 496,Electronics,306.79,478.75,56
+P00497,Allergy Pills 497,Pharmacy,9.42,11.72,85
+P00498,Bluetooth Speaker 498,Electronics,261.42,402.63,21
+P00499,Cotton T-Shirt 499,Clothing,116.55,257.89,90
+P00500,First Aid Kit 500,Pharmacy,20.43,27.46,99

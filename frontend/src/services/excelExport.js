@@ -77,4 +77,4 @@ export async function exportDecisionHistory(decisions) {
     new Blob([buffer]),
     "Decision_History.xlsx"
   );
-}
+}   

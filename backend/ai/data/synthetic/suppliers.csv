@@ -1,0 +1,25 @@
+supplier_id,supplier_name,category,country,lead_time_days,reliability
+S00001,Smart Devices Inc,Electronics,Germany,2,0.95
+S00002,TechSource Ltd,Electronics,Japan,6,0.95
+S00003,Smart Devices Inc,Electronics,Germany,20,0.91
+S00004,Fresh Foods Co,Grocery,Germany,8,0.88
+S00005,Daily Grocers,Grocery,USA,19,0.88
+S00006,Daily Grocers,Grocery,India,9,0.91
+S00007,Cotton World,Clothing,USA,7,0.95
+S00008,Cotton World,Clothing,Egypt,6,0.88
+S00009,Cotton World,Clothing,Germany,4,0.9
+S00010,WoodCraft Ltd,Furniture,UAE,21,0.89
+S00011,Modern Furniture Co,Furniture,United Kingdom,19,0.87
+S00012,WoodCraft Ltd,Furniture,Germany,19,0.89
+S00013,MediSource,Pharmacy,UAE,20,0.88
+S00014,PharmaCare Inc,Pharmacy,USA,9,0.96
+S00015,PharmaCare Inc,Pharmacy,Japan,5,0.9
+S00016,Active Gear,Sports,UAE,7,0.9
+S00017,SportMax,Sports,Egypt,4,0.94
+S00018,SportMax,Sports,Japan,7,0.91
+S00019,Global Books,Books,Japan,12,0.97
+S00020,Knowledge House,Books,Japan,3,0.96
+S00021,Global Books,Books,Egypt,4,0.88
+S00022,Paper & Pens Co,Office Supplies,UAE,8,0.94
+S00023,Business Essentials,Office Supplies,United Kingdom,6,0.89
+S00024,Office World,Office Supplies,Egypt,20,0.91
