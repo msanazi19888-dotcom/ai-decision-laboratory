@@ -4,7 +4,6 @@ from pydantic import BaseModel, Field
 from ai.inference.predict import DemandPredictor
 
 router = APIRouter(prefix="/api/v2", tags=["prediction"])
-
 predictor = DemandPredictor()
 
 
@@ -25,15 +24,5 @@ class DemandPredictionResponse(BaseModel):
 
 @router.post("/predict-demand", response_model=DemandPredictionResponse)
 def predict_demand(payload: DemandPredictionRequest):
-    prediction = predictor.predict(
-        day_of_week=payload.day_of_week,
-        day=payload.day,
-        month=payload.month,
-        year=payload.year,
-        week_of_year=payload.week_of_year,
-        is_weekend=payload.is_weekend,
-        rolling_7_day_avg=payload.rolling_7_day_avg,
-        rolling_30_day_avg=payload.rolling_30_day_avg,
-    )
-
+    prediction = predictor.predict(payload.model_dump())
     return DemandPredictionResponse(predicted_demand=prediction)
